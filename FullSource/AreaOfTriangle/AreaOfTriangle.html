@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../AreaOfTriangle/AreaOfTriangle.css">
+    <script type="text/javascript" src="AreaOfTriangle.js"></script>
+    <title> Triangle </title>
+</head>
+
+<body>
+
+    <header style="color: red; font-size: 2.4rem"> Tính S của 1 tam giác bất kỳ: </header>
+    <div style="padding: 0.8rem 0.5rem"> 
+        <label style="color: purple; font-size: 1.2rem"> Nhập giá trị cạnh thứ nhất: </label>
+        <input style="color: purple; font-size: 1.2rem" type="text" id="FirstNumber">
+    </div>
+
+    <div style="padding: 0.8rem 0.5rem"> 
+        <label style="color: violet; font-size: 1.2rem"> Nhập giá trị cạnh thứ hai: </label>
+        <input style="color: violet; font-size: 1.2rem" type="text" id="SecondNumber">
+    </div>
+
+    <div style="padding: 0.8rem 0.5rem"> 
+        <label style="color: orangered; font-size: 1.2rem"> Nhập giá trị cạnh thứ ba: </label>
+        <input style="color: orangered; font-size: 1.2rem" type="text" id="ThirdNumber">
+    </div>
+    
+    <button style="background-color: transparent; border: none;" onclick="Printout()"> 
+        <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Kết quả:
+      </a> 
+    </button>
+
+    <h1 style="font-size: 1.6rem; color: white" id="Triangle"> </h1>
+
+    <!-- <script type="text/javascript" href="../AreaOfTriangle/AreaOfTriangle.js">
+        function Printout() {
+            let side1 = document.getElementById("FirstNumber").value;
+            let side2 = document.getElementById("SecondNumber").value;
+            let side3 = document.getElementById("ThirdNumber").value;
+            
+            if(isNaN(side1) || isNaN(side2) || isNaN(side3) ){
+                alert("Giá trị này không phải dạng số")
+            } else{
+                var perimeter = (parseInt(side1)  + parseInt(side2) + parseInt(side3))/2;
+            }   
+            
+            var area =  Math.sqrt(perimeter*((perimeter-side1)*(perimeter-side2)*(perimeter-side3)));
+            document.getElementById("Triangle").innerHTML = "Diện tích tam giác bạn cần tìm: " + area;
+        }
+    </script> -->
+</body>
+</html>
